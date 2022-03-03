@@ -1,0 +1,66 @@
+<template>
+    <section class="journal">
+        <h3 class="title">Foodie journal</h3>
+                
+        <div class="row">
+            <div class="col-4">
+                <img src="../../assets/img/single-post-img3-400x263.jpg" alt="prova">
+                <h3>Food corner: Top Japanese Restaurants For Sushi</h3>
+                <p>by Admin, March 25th, 2019</p>
+            </div>
+            <div class="col-4">
+                <img src="../../assets/img/single-post-img3-400x263.jpg" alt="prova">
+                <h3>Food corner: Top Japanese Restaurants For Sushi</h3>
+                <p>by Admin, March 25th, 2019</p>
+            </div>
+            <div class="col-4">
+                <img src="../../assets/img/single-post-img3-400x263.jpg" alt="prova">
+                <h3>Food corner: Top Japanese Restaurants For Sushi</h3>
+                <p>by Admin, March 25th, 2019</p>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+    export default {
+        name:"mainJournal"
+    }
+</script>
+
+<style scoped lang="scss">
+
+    @import "../SCSS/colors.scss";
+
+    .journal{
+            text-align: center;
+            background-color: white;
+            padding: 0px 20px;
+            position: relative;
+            top: -80px;
+            h3.title{
+                position: relative;
+                padding: 20px;
+
+                &:before, &:after{ //creazione delle linee prima e dopo il titolo h3
+                    content: "";
+                    position: absolute;
+                    width: 40%;
+                    top: 50%;
+                    height: 1px;
+                    background: $mainBackground; 
+                }
+                &:after{
+                    left: 60%;
+                }
+                &:before{
+                    left: 0;
+                }
+            }
+        }
+
+        img{
+            max-width: 100%;
+        }
+
+</style>

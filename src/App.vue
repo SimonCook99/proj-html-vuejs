@@ -4,7 +4,7 @@
 
     <myJumbotron />
 
-    
+    <myMain />
     
   </div>
 </template>
@@ -12,12 +12,15 @@
 <script>
 import myHeader from './components/myHeader.vue'
 import myJumbotron from './components/myJumbotron.vue'
+import myMain from './components/myMain.vue'
+
 
 export default {
   name: 'App',
   components: {
     myHeader,
-    myJumbotron
+    myJumbotron,
+    myMain
   },
   data(){
     return{
@@ -28,9 +31,5 @@ export default {
 </script>
 
 <style lang="scss">
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  @import "./components/SCSS/general.scss"
 </style>

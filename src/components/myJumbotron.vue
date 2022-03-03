@@ -16,8 +16,6 @@
 
 <style scoped lang="scss">
 
-    @import "SCSS/colors.scss";
-
     section{
         background-image: url("../assets/img/single-post-img3.jpg");
         background-size: cover;

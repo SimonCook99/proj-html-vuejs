@@ -1,27 +1,30 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <myHeader :lista="listaHeader"/>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import myHeader from './components/myHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    myHeader
+  },
+  data(){
+    return{
+      listaHeader: ["Home", "Recipes", "Places", "Blog", "About", "contact"]
+    }
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 </style>

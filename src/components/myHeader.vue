@@ -42,6 +42,7 @@ export default {
 
 <style scoped lang="scss">
 
+  //importo il file dei colori, così da poterli usare liberamente anche qui
   @import "SCSS/colors.scss";
 
   header{
@@ -83,7 +84,7 @@ export default {
         border-bottom: 2px solid transparent;
         padding-bottom: 10px;
 
-        &.active{
+        &.active{ //classe active al primo elemento della lista
           color: $buttonColor;
           border-bottom: 3px solid $buttonColor;
         }

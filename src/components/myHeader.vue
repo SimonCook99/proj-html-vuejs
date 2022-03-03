@@ -23,7 +23,9 @@
           <li v-for="(item, index) in lista" :key="index">
             <a :class="index == 0 ? 'active':'' " href="#">{{item}}</a>
           </li>
-          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
         </ul>
       </nav>
     </div>

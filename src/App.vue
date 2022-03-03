@@ -1,17 +1,23 @@
 <template>
   <div>
     <myHeader :lista="listaHeader"/>
+
+    <myJumbotron />
+
+    
     
   </div>
 </template>
 
 <script>
 import myHeader from './components/myHeader.vue'
+import myJumbotron from './components/myJumbotron.vue'
 
 export default {
   name: 'App',
   components: {
-    myHeader
+    myHeader,
+    myJumbotron
   },
   data(){
     return{

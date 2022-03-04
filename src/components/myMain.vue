@@ -2,17 +2,23 @@
     <main>
         <div class="container">
             <mainJournal />
+
+            <mainRecipes />
+
         </div>
     </main>
 </template>
 
 <script>
     import mainJournal from "./main/mainJournal.vue"
+    import mainRecipes from "./main/mainRecipes.vue"
+
 
     export default {
         name:"myMain",
         components:{
-            mainJournal
+            mainJournal,
+            mainRecipes
         }
     }
 </script>
@@ -22,9 +28,6 @@
 
     main{
         background-color: $mainBackground;
-        height: 100vh;
 
-        
-        
     }
 </style>

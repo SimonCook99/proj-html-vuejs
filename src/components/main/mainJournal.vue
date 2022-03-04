@@ -5,17 +5,17 @@
         <div class="row">
             <div class="col-4">
                 <img src="../../assets/img/single-post-img3-400x263.jpg" alt="prova">
-                <h3>Food corner: Top Japanese Restaurants For Sushi</h3>
+                <h4>Food corner: Top Japanese Restaurants For Sushi</h4>
                 <p>by Admin, March 25th, 2019</p>
             </div>
             <div class="col-4">
-                <img src="../../assets/img/single-post-img3-400x263.jpg" alt="prova">
-                <h3>Food corner: Top Japanese Restaurants For Sushi</h3>
+                <img src="../../assets/img/fi-roundup-400x263.jpg" alt="prova">
+                <h4>Roundup: My new favourite Recipes for Healthy Living</h4>
                 <p>by Admin, March 25th, 2019</p>
             </div>
             <div class="col-4">
-                <img src="../../assets/img/single-post-img3-400x263.jpg" alt="prova">
-                <h3>Food corner: Top Japanese Restaurants For Sushi</h3>
+                <img src="../../assets/img/fi-toasts-400x263.jpg" alt="prova">
+                <h4>Why These Toasts with Tea are My new Favourite</h4>
                 <p>by Admin, March 25th, 2019</p>
             </div>
         </div>
@@ -61,6 +61,7 @@
 
         img{
             max-width: 100%;
+            margin-bottom: 15px;
         }
 
 </style>

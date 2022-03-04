@@ -32,7 +32,8 @@
                 <div class="row">
                     <div class="col-6" v-for="(image, index) in listaImmagini" :key="index">
                         
-                        <img :src=" `../../assets/img/${image.url}` "  :alt="image.alt">
+                        
+                        <img :src="require('../../assets/img/' + image.url)"  :alt="image.alt">
                     </div>
                     
                 </div>

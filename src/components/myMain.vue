@@ -5,7 +5,7 @@
 
             <mainRecipes :listaImmagini="recipesImages"/>
 
-            <mainCookCollection />
+            <mainCookCollection :imagesList="culinaryImages"/>
 
         </div>
     </main>
@@ -26,6 +26,8 @@
         },
         data(){
             return{
+
+                //lista immagini della sezione recipes
                 recipesImages:[
                     {
                         url: "Mixed-fruits-400x263.jpg",
@@ -59,7 +61,42 @@
                         url: "r-brooke-lark-96398-unsplash-min-460x295.jpg",
                         alt: "cakes"
                     },
-                    
+                ],
+
+                //lista immagini della sezione culinary collection
+                culinaryImages:[
+                    {
+                        url: "drinks-recipes.png",
+                        type: "drinks"
+                    },
+                    {
+                        url: "soups-recipes.png",
+                        type: "soups"
+                    },
+                    {
+                        url: "baking-recipes.png",
+                        type: "bakery"
+                    },
+                    {
+                        url: "dinner-recipes.png",
+                        type: "dinner"
+                    },
+                    {
+                        url: "healthy-recipes.png",
+                        type: "healthy"
+                    },
+                    {
+                        url: "staff-picks.png",
+                        type: "staff picks"
+                    },
+                    {
+                        url: "premium-recipes.png",
+                        type: "appetisers"
+                    },
+                    {
+                        url: "quick-easy-recipes.png",
+                        type: "quick & easy"
+                    }
                 ]
             }
         }

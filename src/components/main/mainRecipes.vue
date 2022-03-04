@@ -1,13 +1,17 @@
 <template>
     <section class="popular-recipes">
 
-        <div class="introduction text-center">
-            <h4 class="text-uppercase">popular recipes</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea deserunt, iure nesciunt rem ratione dignissimos sunt</p>
-        </div>
 
+        <!--mainIntroduction è la parte introduttiva della sezione, a cui passo le scritte come props-->
+        <mainIntroduction 
+            title="popular recipes"
+            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea deserunt, iure nesciunt rem ratione dignissimos sunt"
+        />
 
+        <!--riga principale della sezione-->
         <div class="row main-row">
+
+            <!--contenitore della ricetta principale-->
             <div class="main-recipe col-6">
                 <img src="../../assets/img/Yogurt-Nan-600x395.jpg" alt="Yogurt nan">
                 
@@ -23,38 +27,14 @@
 
             </div>
 
+            <!--contenitore delle altre ricette secondarie-->
             <div class="other-recipes col-6">
                 <div class="row">
-                    <div class="col-6">
-                        <img src="../../assets/img/Mixed-fruits-400x263.jpg" alt="mixed fruits">
+                    <div class="col-6" v-for="(image, index) in listaImmagini" :key="index">
+                        
+                        <img :src=" '../../assets/img/'+image.url" :alt="image.alt">
                     </div>
-                    <div class="col-6">
-                        <img src="../../assets/img/r-rachel-park-366508-unsplash-min-400x263.jpg" alt="mixed fruits">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <img src="../../assets/img/r-michelle-tsang-500721-unsplash-min-400x263.jpg" alt="mixed fruits">
-                    </div>
-                    <div class="col-6">
-                        <img src="../../assets/img/quick-summer-drink-460x295.jpg" alt="mixed fruits">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <img src="../../assets/img/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg" alt="mixed fruits">
-                    </div>
-                    <div class="col-6">
-                        <img src="../../assets/img/perfect-cosmopolitan-460x295.jpg" alt="mixed fruits">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <img src="../../assets/img/fi2x-6-460x295.jpg" alt="mixed fruits">
-                    </div>
-                    <div class="col-6">
-                        <img src="../../assets/img/r-brooke-lark-96398-unsplash-min-460x295.jpg" alt="mixed fruits">
-                    </div>
+                    
                 </div>
                 
             </div>
@@ -63,8 +43,18 @@
 </template>
 
 <script>
+
+    import mainIntroduction from "./partials/mainIntroduction.vue";
+
     export default {
-        name: "mainRecipes"
+        name: "mainRecipes",
+        components:{
+            mainIntroduction
+        },
+        
+        props: {
+            "listaImmagini": Array
+        }
     }
 </script>
 
@@ -80,15 +70,7 @@
         flex-wrap: nowrap;
     }
 
-    .introduction{
-
-        margin-bottom: 55px;
-        p{
-        width: 50%;
-        transform: translate(50%);
-        margin-top: 20px;
-        }
-    }
+    
 
     .main-recipe{
         background-color: white;

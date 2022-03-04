@@ -5,6 +5,8 @@
 
             <mainRecipes :listaImmagini="recipesImages"/>
 
+            <mainCookCollection />
+
         </div>
     </main>
 </template>
@@ -12,13 +14,15 @@
 <script>
     import mainJournal from "./main/mainJournal.vue"
     import mainRecipes from "./main/mainRecipes.vue"
+    import mainCookCollection from "./main/mainCookCollection.vue"
 
 
     export default {
         name:"myMain",
         components:{
             mainJournal,
-            mainRecipes
+            mainRecipes,
+            mainCookCollection
         },
         data(){
             return{

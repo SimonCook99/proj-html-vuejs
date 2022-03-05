@@ -75,6 +75,10 @@ export default {
     flex-direction: column;
     align-items: center;
 
+    ul{
+      margin-bottom: 0;
+    }
+
     li{
       display: inline-block;
       margin: 30px;

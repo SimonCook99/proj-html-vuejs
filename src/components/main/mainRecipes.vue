@@ -21,7 +21,7 @@
 
                     <hr>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nulla eum. Culpa tempora expedita cumque dolorem ad corrupti eligendi quas, ullam porro? Doloribus, consequatur eos molestias eveniet velit accusamus nostrum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nulla eum. Culpa tempora expedita cumque dolorem ad corrupti eligendi quas, ullam porro? Doloribus, consequatur eos molestias eveniet velit accusamus nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae excepturi eum, odit natus facilis qui rerum</p>
                     <button>Learn more</button>
                 </div>
 

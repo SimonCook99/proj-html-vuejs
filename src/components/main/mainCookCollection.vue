@@ -32,10 +32,6 @@
 </script>
 
 <style scoped lang="scss">
-    .culinary-collection{
-        margin-top: 150px;
-    }
-
     
     .card-container .col-3{
         display: flex;

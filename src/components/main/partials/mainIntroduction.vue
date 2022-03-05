@@ -1,6 +1,6 @@
 <template>
 
-    <div class="introduction text-center">
+    <div class="introduction" :class="leftAlign ? 'text-start' : 'text-center'">
         <h4 class="text-uppercase">{{title}}</h4>
         <p>{{description}}</p>
     </div>
@@ -10,19 +10,23 @@
 <script>
     export default {
         name:"mainIntroduction",
-        props:["title", "description"]
+        props:["title", "description", "leftAlign"]
     }
 </script>
 
 <style scoped lang="scss">
 
     .introduction{
+        margin-top: 150px;
         margin-bottom: 55px;
 
         p{
             width: 50%;
-            transform: translate(50%);
             margin-top: 20px;
+        }
+        
+        &.text-center p{
+            transform: translate(50%);
         }
     }
 

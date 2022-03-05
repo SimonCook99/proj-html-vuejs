@@ -7,6 +7,8 @@
 
             <mainCookCollection :imagesList="culinaryImages"/>
 
+            <mainSocialBlog :cardsList="socialBlogCards"/>
+
         </div>
     </main>
 </template>
@@ -15,6 +17,8 @@
     import mainJournal from "./main/mainJournal.vue"
     import mainRecipes from "./main/mainRecipes.vue"
     import mainCookCollection from "./main/mainCookCollection.vue"
+    import mainSocialBlog from "./main/mainSocialBlog.vue"
+
 
 
     export default {
@@ -22,7 +26,8 @@
         components:{
             mainJournal,
             mainRecipes,
-            mainCookCollection
+            mainCookCollection,
+            mainSocialBlog
         },
         data(){
             return{
@@ -97,6 +102,40 @@
                         url: "quick-easy-recipes.png",
                         type: "quick & easy"
                     }
+                ],
+
+                //lista carte del componente socialBlog
+                socialBlogCards: [
+                    {
+                        url: "fi-roundup-400x263.jpg",
+                        title: "Roundup: My New Favourite Recipes for Healty Living",
+                        author: "By Admin, March 25th 2019"
+                    },
+                    {
+                        url: "fi-korean-food-400x263.jpg",
+                        title: "Metal Prep: Krean bibimbap with kimchi",
+                        author: "By Admin, March 25th 2019"
+                    },
+                    {
+                        url: "fi-toasts-400x263.jpg",
+                        title: "Why These Toasts with Tea are My new Favourite",
+                        author: "By Admin, March 25th 2019"
+                    },
+                    {
+                        url: "fi-street-food-400x263.jpg",
+                        title: "Exploring street food in Bangkok",
+                        author: "By Admin, March 25th 2019"
+                    },
+                    {
+                        url: "fi-organic-breakfast-400x263.jpg",
+                        title: "Organic choices for Healthier living",
+                        author: "By Admin, March 25th 2019"
+                    },
+                    {
+                        url: "fi-water-side-rest-400x263.jpg",
+                        title: "5 waterside restaurants in Instanbul for special events",
+                        author: "By Admin, March 25th 2019"
+                    },
                 ]
             }
         }

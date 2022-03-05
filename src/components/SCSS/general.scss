@@ -1,10 +1,16 @@
 @import "colors.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;300;400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* body{
+    font-family: 'Noto Serif Display', serif;
+} */
 
 button{
     background-color: $buttonColor;

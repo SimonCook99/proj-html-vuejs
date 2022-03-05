@@ -47,12 +47,42 @@
                     </div>
 
                 </div>
-                
-            </div>
 
-            <div class="col-4">
+                <button id="load" class="grey">Load more posts</button>
                 
             </div>
+            <!--fine prima macrocolonna-->
+
+            <!--inizio seconda macrocolonna-->
+            <div class="col-4">
+
+                <div class="recipes">
+                    <img class="recipes" src="../../assets/img/cadvert.jpg" alt="ad recipes">
+                    <h4>View our latest recipes</h4>
+                </div>
+
+                <div class="city-guide">
+                    <img src="../../assets/img/singapore-featured-image-400x263.jpg" alt="">
+
+                    <h3>City Guide: Singapore</h3>
+
+                    <button>
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <span class="text-uppercase">View all city guides</span>
+                    </button>
+
+                    <hr class="my-5">
+                </div>
+
+
+                
+                
+                
+
+                
+            </div>
+            <!--fine seconda macrocolonna-->
+
         </div>
 
     </section>
@@ -76,6 +106,10 @@
 <style scoped lang="scss">
 
     @import "../SCSS/general.scss";
+
+    img{
+        width: 85%;
+    }
 
     .social-blog{
         position: relative;
@@ -133,6 +167,54 @@
 
                 h4,p{
                     padding: 10px 10px 0px 10px;
+                }
+            }
+        }
+
+        #load{
+            position: relative;
+            width: calc(100% - 50px);
+            margin-left: 15px;
+            color: black;
+        }
+
+
+        .col-4{
+            text-align: center;
+
+            .recipes{
+                margin-bottom: 30px;
+                position: relative;
+
+                h4{
+                    position: absolute;
+                    top: 37%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    padding: 0px 30px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .city-guide{
+                position: relative;
+
+                h3{
+                    position: absolute;
+                    top: 50%;
+                    left: 8%;
+                    color: white;
+                    background-color: rgba(0,0,0,0.5);
+                    padding: 10px;
+                    font-size: 20px;
+                }
+
+                button, hr{
+                    position: relative;
+                    width: 85%;
+                }
+                hr{
+                    left: 8%;
                 }
             }
         }

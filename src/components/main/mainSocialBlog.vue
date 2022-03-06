@@ -127,6 +127,34 @@
                     </div>
 
                     <div class="tweets">
+
+                        <div class="title">
+                            <h5>Tweets <p>by</p><a href="#">@Theme_Fusion</a></h5>
+                            <img src="../../assets/img/image.svg" alt="info">
+                        </div>
+
+                        <div class="main-tweet">
+                            <img class="avatar" src="../../assets/img/3a74ce3d0532b7773b174c45ca3bd05a_normal.png" alt="avatar">
+
+                            <div class="tweet-body">
+                                <h6>ThemeFusion</h6>
+                                <p>@Theme_Fusion</p>
+                                <!-- <img src="../../assets/img/image (1).svg" alt=""> -->
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi, dolor veritatis qui molestias exercitationem amet, quis, aut <a href="#">#avada</a> ut consectetur ea saepe dignissimos reiciendis mollitia repellat nihil provident autem <a href="#">#BlackFriday2020</a></p>
+
+                                <img src="../../assets/img/En2TRxLW4AEiWUN.jpeg" alt="image">
+
+                                <div class="interactions">
+                                    <div class="buttons">
+                                        <img src="../../assets/img/image (2).svg" alt="heart">
+                                        <img src="../../assets/img/image (3).svg" alt="share">
+                                    </div>
+                                    <p>21h</p>
+
+                                </div>
+                            
+                            </div>
+                        </div>
                         
                     </div>
                     
@@ -236,13 +264,15 @@
         .col-4{
             text-align: center;
 
-            img{
-                width: 85%;
-            }
+            
 
             .recipes{
                 margin-bottom: 30px;
                 position: relative;
+
+                img{
+                    width: 85%;
+                }
 
                 h4{
                     position: absolute;
@@ -256,6 +286,10 @@
 
             .city-guide{
                 position: relative;
+
+                img{
+                    width: 85%;
+                }
 
                 h3{
                     position: absolute;
@@ -350,6 +384,67 @@
                     }
                 }
 
+            }
+
+            .tweets{
+                background-color: white;
+                position: relative;
+                left: 8%;
+                width: 85%;
+                margin-top: 50px;
+                padding: 15px;
+
+                .title{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 25px;
+
+                    p,a{
+                        font-size: 12px;
+                        margin-left: 5px;
+                    }
+
+                    h5{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .main-tweet{
+                    display: flex;
+                    text-align: left;
+                    overflow: auto;
+
+                    img.avatar{
+                        height: 10%;
+                    }
+
+                    p.text{
+                        color: black;
+                        line-height: 20px;
+                        margin-bottom: 25px;
+
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+
+                    img{
+                        max-width: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                .interactions{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+
+                    img{
+                        margin-right: 15px;
+                    }
+                }
+                
             }
             
             

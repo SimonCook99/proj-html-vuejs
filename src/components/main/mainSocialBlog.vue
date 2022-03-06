@@ -96,6 +96,39 @@
                         <button class="bg-white">Popular</button>
                         <button class="grey">recent</button>
                     </div>
+
+                    <div class="collections">
+                        <div class="collection">
+                            <img src="../../assets/img/single-post-img3-600x395.jpg">
+                            
+                            <div class="details">
+                                <h6>Food Corner: Top Japanese restaurants for Sushi</h6>
+                                <p>march 25th, 2019</p>
+                            </div>
+                        </div>
+
+                        <div class="collection">
+                            <img src="../../assets/img/singapore-featured-image-400x263.jpg">
+
+                            <div class="details">
+                                <h6>City guide: Singapore</h6>
+                                <p>february 27th, 2019</p>
+                            </div>
+                        </div>
+
+                        <div class="collection">
+                            <img src="../../assets/img/slide1-bg-66x66.jpg">
+
+                            <div class="details">
+                                <h6>6 nutrional tips to help burn Body Fat</h6>
+                                <p>february 28th, 2019</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tweets">
+                        
+                    </div>
                     
 
                 </div>
@@ -130,9 +163,7 @@
 
     @import "../SCSS/general.scss";
 
-    img{
-        width: 85%;
-    }
+    
 
     .social-blog{
         position: relative;
@@ -204,6 +235,10 @@
 
         .col-4{
             text-align: center;
+
+            img{
+                width: 85%;
+            }
 
             .recipes{
                 margin-bottom: 30px;
@@ -296,6 +331,25 @@
                     width: calc(85% / 2);
                     padding: 10px 20px;
                 }
+            }
+
+            .collections{
+
+                .collection{
+                    text-align: left;
+                    position: relative;
+                    left: 8%;
+                    display: flex;
+                    margin-top: 30px;
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        margin-right: 15px;
+                    }
+                }
+
             }
             
             

@@ -7,7 +7,7 @@
             :leftAlign="true"
         />
 
-        <button>Read our blog <i class="fa-solid fa-map-location"></i> </button>
+        <button class="start">Read our blog <i class="fa-solid fa-map-location"></i> </button>
 
         <!--contenitore principale-->
         <div class="row">
@@ -75,7 +75,30 @@
                 </div>
 
 
-                
+                <div class="social">
+                    
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+
+                    <div class="follow">
+                        <h6>Follow us</h6>
+
+                        <button class="grey"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="grey"><i class="fa-brands fa-instagram"></i></button>
+                        <button class="grey"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="grey"><i class="fa-brands fa-youtube"></i></button>
+                        <button class="grey"><i class="fa-brands fa-pinterest-p"></i></button>
+                    </div>
+
+                    <div class="filter">
+                        <button class="bg-white">Popular</button>
+                        <button class="grey">recent</button>
+                    </div>
+                    
+
+                </div>
                 
                 
 
@@ -114,7 +137,7 @@
     .social-blog{
         position: relative;
 
-        button{
+        button.start{
             position: absolute;
             top: 0;
             right: 0;
@@ -201,7 +224,7 @@
 
                 h3{
                     position: absolute;
-                    top: 50%;
+                    top: 40%;
                     left: 8%;
                     color: white;
                     background-color: rgba(0,0,0,0.5);
@@ -217,6 +240,65 @@
                     left: 8%;
                 }
             }
+        }
+
+        .social{
+
+            .search{
+                position: relative;
+
+                svg{
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    left: 40px;
+                }
+            }
+            
+            input{
+                width: 85%;
+                border: 0;
+                padding: 10px;
+                padding-left: 50px;
+                border-radius: 10px;
+                border: 2px solid $mainButtonColor;
+
+                &:before{
+                    display: inline-block;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    font: var(--fa-font-solid);
+                    content: "f002";
+                }
+            }
+
+            .follow{
+                text-align: left;
+                position: relative;
+                left: 8%;
+                margin-top: 40px;
+
+                button.grey{
+                    padding: 5px 10px;
+                    background-color: #edede7;
+                    margin-top: 20px;
+                    color: grey;
+                    margin-right: 15px;
+                    border-radius: 5px;
+                    border: 2px solid $mainButtonColor;
+                }
+            }
+
+            .filter{
+                button{
+                    color: black;
+                    margin-top: 40px;
+                    width: calc(85% / 2);
+                    padding: 10px 20px;
+                }
+            }
+            
+            
         }
     }
 

@@ -150,20 +150,11 @@
                                         <img src="../../assets/img/image (3).svg" alt="share">
                                     </div>
                                     <p>21h</p>
-
                                 </div>
-                            
                             </div>
                         </div>
-                        
                     </div>
-                    
-
-                </div>
-                
-                
-
-                
+                </div> 
             </div>
             <!--fine seconda macrocolonna-->
 
@@ -190,8 +181,6 @@
 <style scoped lang="scss">
 
     @import "../SCSS/general.scss";
-
-    
 
     .social-blog{
         position: relative;

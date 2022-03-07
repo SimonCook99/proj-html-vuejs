@@ -10,6 +10,10 @@
             <mainSocialBlog :cardsList="socialBlogCards"/>
 
         </div>
+
+        <mainNewsletter />
+
+        
     </main>
 </template>
 
@@ -18,6 +22,8 @@
     import mainRecipes from "./main/mainRecipes.vue"
     import mainCookCollection from "./main/mainCookCollection.vue"
     import mainSocialBlog from "./main/mainSocialBlog.vue"
+    import mainNewsletter from "./main/mainNewsletter.vue"
+
 
 
 
@@ -27,7 +33,8 @@
             mainJournal,
             mainRecipes,
             mainCookCollection,
-            mainSocialBlog
+            mainSocialBlog,
+            mainNewsletter
         },
         data(){
             return{

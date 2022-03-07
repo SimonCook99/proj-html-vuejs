@@ -140,6 +140,8 @@
                 color: white;
                 margin-top: 10px;
                 margin-left: 40px;
+                width: 15px;
+                height: 15px;
             }
 
             p{

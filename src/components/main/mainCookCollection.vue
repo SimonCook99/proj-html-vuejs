@@ -33,6 +33,8 @@
 
 <style scoped lang="scss">
     
+    @import "../SCSS/colors.scss";
+
     .card-container .col-3{
         display: flex;
         flex-direction: column;
@@ -45,6 +47,22 @@
 
         img{
             width: 50%;
+        }
+
+        h5{
+            width: 90%;
+            height: 50px;
+            text-align: center;
+            margin: 0px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:hover h5{
+            background-color: $buttonColor;
+            color: white;
+            cursor: pointer;
         }
     }
 

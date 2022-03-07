@@ -11,9 +11,10 @@
 
         </div>
 
+        <!--il componente newsletter fuori dal container, dato che dovrà occupare l'intera larghezza-->
         <mainNewsletter />
 
-        
+
     </main>
 </template>
 

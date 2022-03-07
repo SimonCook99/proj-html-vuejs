@@ -5,6 +5,8 @@
     <myJumbotron />
 
     <myMain />
+
+    <myFooter :lista="listaFooter"/>
     
   </div>
 </template>
@@ -13,6 +15,8 @@
 import myHeader from './components/myHeader.vue'
 import myJumbotron from './components/myJumbotron.vue'
 import myMain from './components/myMain.vue'
+import myFooter from './components/myFooter.vue'
+
 
 
 export default {
@@ -20,11 +24,13 @@ export default {
   components: {
     myHeader,
     myJumbotron,
-    myMain
+    myMain,
+    myFooter
   },
   data(){
     return{
-      listaHeader: ["Home", "Recipes", "Places", "Blog", "About", "contact"]
+      listaHeader: ["Home", "Recipes", "Places", "Blog", "About", "contact"],
+      listaFooter: ["Recipes", "Places", "Blog", "About", "contact"]
     }
   }
 }

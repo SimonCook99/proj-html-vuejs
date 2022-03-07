@@ -43,8 +43,6 @@
 
                     <img src="../assets/img/download-android.png" alt="app android">
                     <img src="../assets/img/download-app-store.png" alt="app apple store">
-
-                    
                     
                 </div>
             </div>
@@ -52,7 +50,7 @@
 
         <div class="footer-bottom">
 
-            <i class="fa-solid fa-angle-up"></i>
+            <a href="#"><i class="fa-solid fa-angle-up"></i></a>
 
             <p>© Copyright 2012-2020 | Avada Theme by ThemeFusion | All rights Resrved | Powered by Vue CLI</p>
 
@@ -78,6 +76,7 @@
 
     footer{
         margin-top: 300px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         svg{
             margin-top: 30px;

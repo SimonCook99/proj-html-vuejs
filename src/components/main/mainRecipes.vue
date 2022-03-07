@@ -37,10 +37,10 @@
                 <div class="row">
                     <div class="col-6" v-for="(image, index) in listaImmagini" :key="index">
                         
-                        <div class="overlay">
+                        <!-- <div class="overlay">
                             <i class="fa-solid fa-link"></i>
                             <h5>Lunch favourite with salad, Naan and beans</h5>
-                        </div>
+                        </div> -->
                         
                         <img :src="require('../../assets/img/' + image.url)"  :alt="image.alt">
                     </div>

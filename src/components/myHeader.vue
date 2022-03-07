@@ -49,6 +49,7 @@ export default {
 
   header{
     padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .section-top{

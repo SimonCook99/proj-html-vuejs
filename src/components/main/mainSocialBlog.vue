@@ -236,6 +236,10 @@
                 border: 0;
                 padding-bottom: 15px;
 
+                h4{
+                    font-weight: 600;
+                    font-size: 20px;
+                }
                 h4,p{
                     padding: 10px 10px 0px 10px;
                 }
@@ -252,6 +256,7 @@
 
         .col-4{
             text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
             
 

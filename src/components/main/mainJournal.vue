@@ -61,6 +61,7 @@
             h3.title{
                 position: relative;
                 padding: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
                 &:before, &:after{ //creazione delle linee prima e dopo il titolo h3
                     content: "";

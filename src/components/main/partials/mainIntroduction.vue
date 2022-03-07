@@ -19,6 +19,7 @@
     .introduction{
         margin-top: 150px;
         margin-bottom: 55px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         p{
             width: 50%;

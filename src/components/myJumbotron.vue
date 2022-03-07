@@ -41,6 +41,7 @@
 
         h1{
             padding-bottom: 20px;
+            font-size: 35px;
         }
 
         button{

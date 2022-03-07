@@ -42,6 +42,7 @@
         justify-content: center;
         background-color: white;
         margin: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: calc(25% - 40px);
         padding: 20px 0px;
 

@@ -4,7 +4,7 @@
                 
         <div class="row">
             <div class="col-4">
-                <img src="../../assets/img/single-post-img3-400x263.jpg" alt="prova">
+                <img src="../../assets/img/single-post-img3-400x263.jpg">
 
                 <!--contenitore overlay per l'effetto di hover-->
                 <div class="overlay">
@@ -16,7 +16,7 @@
                 <p>by Admin, March 25th, 2019</p>
             </div>
             <div class="col-4">
-                <img src="../../assets/img/fi-roundup-400x263.jpg" alt="prova">
+                <img src="../../assets/img/fi-roundup-400x263.jpg">
 
                 <div class="overlay">
                     <i class="fa-solid fa-link"></i>
@@ -27,7 +27,7 @@
                 <p>by Admin, March 25th, 2019</p>
             </div>
             <div class="col-4">
-                <img src="../../assets/img/fi-toasts-400x263.jpg" alt="prova">
+                <img src="../../assets/img/fi-toasts-400x263.jpg">
 
                 <div class="overlay">
                     <i class="fa-solid fa-link"></i>

@@ -37,10 +37,10 @@
                 <div class="row">
                     <div class="col-6" v-for="(image, index) in listaImmagini" :key="index">
                         
-                        <!-- <div class="overlay">
+                        <div class="overlay">
                             <i class="fa-solid fa-link"></i>
-                            <h5>Lunch favourite with salad, Naan and beans</h5>
-                        </div> -->
+                            <h5>Fruit Platter with Banana, Mango, Berries and Orange</h5>
+                        </div>
                         
                         <img :src="require('../../assets/img/' + image.url)"  :alt="image.alt">
                     </div>
@@ -148,6 +148,16 @@
         .col-6{
             margin-bottom: 20px;
             position: relative;
+
+            &:hover .overlay{
+                visibility: visible;
+                cursor: pointer;
+
+                h5{
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
         }
 
         .overlay{
@@ -156,10 +166,7 @@
             height: 172px;
         }
 
-        &:hover .overlay{
-            visibility: visible;
-            cursor: pointer;
-        }
+        
     }
     
 </style>

@@ -139,7 +139,7 @@
                             <div class="tweet-body">
                                 <h6>ThemeFusion</h6>
                                 <p>@Theme_Fusion</p>
-                                <!-- <img src="../../assets/img/image (1).svg" alt=""> -->
+                                
                                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi, dolor veritatis qui molestias exercitationem amet, quis, aut <a href="#">#avada</a> ut consectetur ea saepe dignissimos reiciendis mollitia repellat nihil provident autem <a href="#">#BlackFriday2020</a></p>
 
                                 <img src="../../assets/img/En2TRxLW4AEiWUN.jpeg" alt="image">
@@ -251,6 +251,8 @@
             width: calc(100% - 50px);
             margin-left: 15px;
             color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px 0px;
         }
 
 
